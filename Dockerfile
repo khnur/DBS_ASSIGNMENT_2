@@ -3,6 +3,6 @@ VOLUME /tmp
 WORKDIR /app
 LABEL authors="Nurzhan Kozhamuratov"
 
-COPY target/*.jar app.jar
+COPY *.jar app.jar
 ENTRYPOINT ["java","-jar","/app/app.jar"]
 EXPOSE 8080
